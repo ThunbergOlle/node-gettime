@@ -3,7 +3,7 @@ This is an easy module that gets the current date or time of the day and outputs
 
 **Install**
 ```js
-npm node-get-time --save
+npm install node-get-time --save
 
 ```
 **Import**
