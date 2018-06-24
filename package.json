@@ -1,6 +1,6 @@
 {
   "name": "node-get-time",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Get's the current time and outputs it.",
   "main": "index.js",
   "scripts": {
