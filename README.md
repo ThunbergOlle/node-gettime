@@ -4,23 +4,38 @@ This is an easy module that gets the current date or time of the day and outputs
 **Install**
 ```js
 npm install node-get-time --save
-
 ```
 **Import**
 ```js
-    const time = require('node-get-time');
+const time = require('node-get-time');
 ```
 
 ## Methods
 
 ```js
-const time = require('node-get-time');
-time.gettime(function(callback){});
-```
+time.gettime(function(res){
 
+});
+```
+- res: The response you get
+    - dateTime: The time and date.
+    - date: The current date.
+    - time: The current time.
+```js
+time.now();
+```
+Returnes the current time.
 ## Examples
 **You can copy and paste these!**
+### Just get the time
+```js
+const time = require('node-get-time');
 
+console.log(time.now());
+```
+```
+19:22:23
+```
 ### Display all information
 ```js
 const time = require('node-get-time');
@@ -58,6 +73,8 @@ time.gettime(function(time){
 19:02:22
 ```
 
+### More info
+I'm really **happy** if you'd like to share this module or use this in your upcomming script or whatever you are going to use this for. If you feel like there is anything missing then please open an issue on the [Github](https://github.com/ThunbergOlle/node-gettime) page. I will fix it as soon as possible.
 ## License
 
 Copyright (c) 2018 Olle Thunberg

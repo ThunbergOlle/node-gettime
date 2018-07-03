@@ -32,3 +32,11 @@ exports.gettime = function(callback){
     
     callback(res);
 }
+exports.now = () => {
+    var now     = new Date(); 
+    var hour    = now.getHours();
+    var minute  = now.getMinutes();
+    var second  = now.getSeconds();
+    var time = hour + ':' + minute + ':' + second;
+    return time;
+}
